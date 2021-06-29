@@ -327,6 +327,10 @@ section {
   padding: 0;
 }
 
+.about li.portfolioLink a {
+  color: #bdbdbd;
+}
+
 .about .content ul li {
   padding-bottom: 10px;
 }
