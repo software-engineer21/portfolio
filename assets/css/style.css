@@ -1,3 +1,6 @@
+
+
+
 /**
 * Template Name: iPortfolio - v1.2.1
 * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
@@ -76,8 +79,8 @@ h1, h2, h3, h4, h5, h6 {
 
 #header .profile img {
   margin: 15px auto;
-  display: block;
-  width: 120px;
+/*  display: block;
+*/  width: 120px;
   border: 8px solid #2c2f3f;
 }
 
@@ -136,6 +139,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Desktop Navigation */
 .nav-menu {
   padding-top: 150px;
+  padding-left: 60px;
 }
 
 .nav-menu * {
@@ -271,6 +275,16 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 24px;
     margin-bottom: 30px;
   }
+
+ .about .content h3 {
+    font-weight: 700;
+    font-size: 26px;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    color: #ffffff;
+}
+
+
 }
 
 /*--------------------------------------------------------------
@@ -311,15 +325,18 @@ section {
 
 .section-title p {
   margin-bottom: 0;
+  text-align: justify;
 }
 
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
 .about .content h3 {
-  font-weight: 700;
-  font-size: 26px;
-  color: #ffffff;
+    font-weight: 700;
+    font-size: 26px;
+    padding-top: 120px;
+    padding-bottom: 20px;
+    color: #ffffff;
 }
 
 .about .content ul {
@@ -327,8 +344,12 @@ section {
   padding: 0;
 }
 
-.about li.portfolioLink a {
+.customLinkDesign a {
   color: #bdbdbd;
+}
+
+.customLinkDesignContact a {
+  color: #000;
 }
 
 .about .content ul li {
@@ -613,7 +634,7 @@ section {
 
 .services .icon i {
   color: #fff;
-  font-size: 24px;
+  font-size: 35px;
 }
 
 .services .icon-box:hover .icon {
@@ -664,7 +685,7 @@ section {
   font-size: 18px;
   font-weight: bold;
   margin: 10px 0 5px 0;
-  color: #111;
+  color: #bdbdbd;
 }
 
 .testimonials .testimonial-item h4 {
@@ -695,7 +716,7 @@ section {
   font-style: italic;
   margin: 0 15px 15px 15px;
   padding: 20px;
-  background: #fff;
+  background: #000;
   position: relative;
   margin-bottom: 35px;
   border-radius: 6px;
@@ -706,7 +727,7 @@ section {
   content: "";
   width: 0;
   height: 0;
-  border-top: 20px solid #fff;
+  border-top: 20px solid #000;
   border-right: 20px solid transparent;
   border-left: 20px solid transparent;
   position: absolute;
@@ -736,6 +757,19 @@ section {
   .testimonials {
     margin: 30px 10px;
   }
+
+ .about .content h3 {
+    font-weight: 700;
+    font-size: 26px;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    color: #ffffff;
+}
+
+.nav-menu {
+    padding-top: 45px;
+}
+
 }
 
 /*--------------------------------------------------------------
@@ -959,6 +993,19 @@ section {
   .breadcrumbs ol li {
     display: inline-block;
   }
+
+ .about .content h3 {
+    font-weight: 700;
+    font-size: 26px;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    color: #ffffff;
+}
+
+.nav-menu {
+  padding-top: 45px;
+}
+
 }
 
 /*--------------------------------------------------------------
@@ -1046,6 +1093,15 @@ section {
     position: static;
     margin-top: 30px;
   }
+
+ .about .content h3 {
+    font-weight: 700;
+    font-size: 26px;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    color: #ffffff;
+}
+
 }
 
 /*--------------------------------------------------------------
@@ -1085,4 +1141,57 @@ section {
 
 .form-group label {
   color: #000;
+}
+
+
+/*Custom CSS */
+
+
+.owl-carousel .owl-item img {
+    display: inline-block !important;
+    width: 100%;
+}
+
+.countryFlag img {
+    width: 5% !important;
+    margin-right: 5px !important;
+}
+
+.count-box p {
+    text-align: left;
+}
+
+.resume-item p {
+    text-align: justify;
+}
+
+.description {
+    text-align: justify;
+}
+
+
+.p-pic {
+    padding-left: 70px;
+}
+
+.p-pic-img img {
+    width: 100%;
+
+}
+
+.p-pic-img {
+    position: relative; overflow: hidden;
+}
+
+.second-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+/*    transition: .8s;
+*/    transform: translateX(-100%)
+}
+
+.p-pic-img:hover .second-img {
+    transform: translateX(0)
+
 }
